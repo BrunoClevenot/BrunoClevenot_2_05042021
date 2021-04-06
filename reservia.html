@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 	<head>
-		<meta charset= « utf-8» />
+		<meta charset= « UTF-8» />
 		<title> Reservia </title>
 		<!-- Liens vers police Rateaway, icones fontawesome et fichier css-->
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,19 +18,34 @@
 				<div>
 					<p><img src="images/logo/Reservia.svg" alt="logo" id="logo" /></p>
 				</div>
-				<div class="nav-and-button">
-					<nav>
-						<ul id="h">Hébergements</ul>
-						<ul id="a">Activités</ul>
-					</nav>
-				</div>
+				<nav>
+					<ul>
+						<li><a href="" class="h" >Hébergements</a></li>
+						<li><a href="#activites" class="a">Activités</a></li>
+						<li><a href="" class="lien">S'inscrire</a></li>
+					</ul>
+				</nav>
 			</header>
 
 			<!-- Corps de la page-->
-			<main class="main">
+			<main>
 				<!-- Mettre les articles (avec Flex)-->
-				<section class="en_tete">
-					
+				<section class="recherche">
+					<div>
+						<h1>Trouver votre hébergement pour des vacances de rêve</h1>
+						<p>En plein centre ville ou en pleine nature</p>
+					</div>
+					<div class="town-search">
+						<form method="post" action="traitement.js" class="recherche">
+							<div class="gray"> 
+								<label for="destination">
+									<i class="fas fa-map-marker-alt"></i>
+									<input type="text" name="destination" id="destination" placeholder="Marseille,France" />
+									<input type="submit" value="Rechercher"  />
+								</label>
+							</div>
+						</form>
+					</div>
 				</section>
 			</main>
 			<footer>
