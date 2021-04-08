@@ -64,6 +64,9 @@ footer
         display:flex;
         flex-direction: row;
         justify-content: flex-start;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: #F2F2F2;
     }
 
     footer div
@@ -157,7 +160,7 @@ footer
     {
         border-radius: 30px;
         background-color: #DEEBFF;
-        height:28px;
+        height:30px;
         width: 30px;
         line-height: 30px;
         text-align: center;
@@ -166,8 +169,13 @@ footer
 
     .filtres-contenu
     {
-        border:1px gray solid;
+        border:2px #F2F2F2 solid;
         border-radius: 30px;
+    }
+
+    .filtres-contenu:hover
+    {
+        border:2px #0065FC solid;
     }
 
     .infos-news
@@ -178,11 +186,79 @@ footer
 
     .eco
     {
-        width: 150px;
-    }
-    .ecoa
-    {
-        text-align: center;
+        width: 120px;
     }
 
+    .familles
+    {
+        width: 100px;
+    }
+
+    .romantic
+    {
+        width: 120px;
+    }
+
+    .animal
+    {
+        width: 170px;
+    }
+
+    /* Section hébergements */
+    /* 1. Hébergements principal */
+    .section-hebergement
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around; 
+    }
+
+    .hebergement
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logement
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hebergement, .pop
+    {
+        background-color: gray;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    article
+    {
+        border: 1px red solid;
+    }
+
+    article h2
+    {
+        margin-left: 10px;
+    }
+
+    
+
+    .log
+    {
+        height: 160px;
+        width: 196px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .image
+    {
+        width: 188px;
+        height: 91px;
+    }
+    
 }
