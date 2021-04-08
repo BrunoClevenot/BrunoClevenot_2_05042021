@@ -98,21 +98,91 @@ footer
         width: 420px;
     }
 
-    form i
-    {
-        background-color: #F2F2F2;
-    }
-
     .bouton
     {
         background-color: #0065FC;
         color:white;
         font-weight: bold;
+        border-radius: 0 10px 10px 0;
+        height:30px;
     }
 
-    .gris-noir
+    .gps
     {
+        border-radius: 10px 0 0 10px;
         background-color: #F2F2F2;
+        height:30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .town-search
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #destination
+    {
+    height: 26px;
+    border-style: none;
+    }
+
+    .filtres
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        line-height: 100%;
+    }
+    .filtres h2
+    {
+        margin-right: 20px;
+    }
+    .filtres div
+    {
+        margin-left: 20px;
+        margin-top:20px;
+    }
+
+    .infos
+    {
+        display: flex;
+        flex-direction:row;
+    }
+
+    .filter-icons, .news
+    {
+        border-radius: 30px;
+        background-color: #DEEBFF;
+        height:28px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #0065FC;
+    }
+
+    .filtres-contenu
+    {
+        border:1px gray solid;
+        border-radius: 30px;
+    }
+
+    .infos-news
+    {
+        height:30px;
+        line-height: 30px;
+    }
+
+    .eco
+    {
+        width: 150px;
+    }
+    .ecoa
+    {
+        text-align: center;
     }
 
 }
