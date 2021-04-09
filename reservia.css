@@ -259,17 +259,24 @@ footer
         border-radius: 5px 5px 0 0;
     }
 
-    h3
+    .h2-hebergement
     {
         font-size: 15px;
         font-weight: bold;
+        margin-left: 10px;
     }    
 
-    h3, .txt-hebergement, .etoiles
+    .txt-hebergement, .etoiles
     {
         margin-left:5px;
     }
 
+    .star-icon
+    {
+        color: #0065FC;
+    }
+
+    /* 2. Section populaires */
     .image2
     {
         width: 127px;
@@ -281,11 +288,94 @@ footer
     {
         width: 420px;
     }
-
+    
     .titre
     {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 100%;
     }
+
+    .contenu-aside
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 626px;
+    }
+
+    .contenu-a
+    {
+        background-color: white;
+        border-radius: 5px;
+        width: 420px;
+    }
+
+    .as
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 343px;
+        height: 144px;
+    }
+
+    /* Section activités */
+    .acti-img
+    {
+        width: 302px;
+    }
+    
+    .imag1, .imag2, .imag3, .imag4, .imag5
+    {
+        width: 302px;
+    }
+
+    .imag1
+    {
+        height: 390px;
+    }
+
+    .imag2
+    {
+        height: 180px;
+    }
+
+    .imag3
+    {
+        height: 110px;
+    }
+
+    .imag4
+    {
+        height: 140px;
+    }
+
+    .imag5
+    {
+        height: 150px;
+    }
+
+    .acti-titre
+    {
+       margin-left: 10px;
+    }
+
+    .activites-div
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        align-content: space-around;
+    }
+
 }
