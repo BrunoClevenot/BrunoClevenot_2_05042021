@@ -1,54 +1,95 @@
 /* Général */
+
+/* Mettre le contenu du container en colonnes */
 .container
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border: 1px lime solid;
 }
 
+/* Définition de la police par défaut */
 .body
 {
     font-family: Raleway, Arial;    
 }
 
+/* Suppression des boutons
+sur les navigations et alignement en ligne */
 nav ul
 {
     list-style-type: none;
     display:flex;
 }
 
-.h:hover, .a:hover
-{
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
-}
-
+/* Suppression des décorations  sur les naviagations
+et mise en couleur noires */
 a
 {
     color: black;
     text-decoration: none;
 }
-
+/* Sauf pour le lien S'insrire (en bleu)
+On met ce lien en gras */
 .lien
 {
     color:#0065FC;
+    font-weight: bold;
 }
 
+/* Fond gris pour le footer
+et les éléments internes de
+la section hébergements*/
 footer
 {
     background-color: #F2F2F2;
 }
 
-/* Media querry deskop */
-@media (min-width: 1200px){
+.pop, .hebergement
+{
+    background-color: gray;
+}
+
+/* Media querry DESKOP */
+@media (min-width: 1200px)
+{
+    /* GÉNÉRALITÉS */
+    /* Tailles des polices*/
+    h1
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    h2
+    {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .line-1
+    {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    /* Changement des éléments de navigation
+    hébergements et Activités au survol */
+    .h:hover, .a:hover
+    {
+        border-top: 2px #0065FC solid;
+        color: #0065FC;
+    }
+    /* Définition de la largeur
+    et centrage de la boîte container */
     .container
     {
         width: 1440px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    /* Centrage du header, du footer et du main
+    + définition des mises en formes internes
+    pour ces boîtes */
     header
     {
         display:flex;
@@ -58,7 +99,6 @@ footer
         margin-left: 50px;
         margin-right: 50px;
     }
-
     footer
     {
         display:flex;
@@ -66,27 +106,27 @@ footer
         justify-content: flex-start;
         margin-left: 50px;
         margin-right: 50px;
-        background-color: #F2F2F2;
     }
-
+    main
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    /* Définition des espacements pour
+    les boîtes internes du footer */
     footer div
     {
         margin-right: 200px;
         margin-left: 50px;
     }
-
+    /* définition des espacements entre
+    les éléments de navigations dans le header*/
     nav li
     {
         margin-right: 20px;
-    }
-
-    main
-    {
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 50px;
-        margin-right: 50px;
     }
 
     #logo
@@ -94,13 +134,21 @@ footer
         width:auto;
         height: auto;
     }
-
+    /* SECTION DE RECHERCHE */
+    /* Mise en page en ligne */
+    .town-search
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    /* Modification du formulaire de recherche */
     form
     {
         border-radius: 5px;
         width: 420px;
     }
-
+    /* Mise en forme du bouton de recherche */
     .bouton
     {
         background-color: #0065FC;
@@ -109,7 +157,8 @@ footer
         border-radius: 0 10px 10px 0;
         height:30px;
     }
-
+    /* Mise en forme de l'icone de recherche
+    de lieux de résidence */
     .gps
     {
         border-radius: 10px 0 0 10px;
@@ -119,20 +168,14 @@ footer
         line-height: 30px;
         text-align: center;
     }
-
-    .town-search
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
+    /* Profil de la zone de saisie
+    de la destination recherchée */
     #destination
     {
-    height: 26px;
-    border-style: none;
+        height: 26px;
+        border-style: none;
     }
-
+    /* Les boîtes de filtres*/
     .filtres
     {
         display: flex;
@@ -149,13 +192,14 @@ footer
         margin-left: 20px;
         margin-top:20px;
     }
-
+    /* Les infos de fin de section de Recherche*/
     .infos
     {
         display: flex;
         flex-direction:row;
     }
-
+    /* Modifications des icones dans 
+    la section Recherche */
     .filter-icons, .news
     {
         border-radius: 30px;
@@ -166,39 +210,35 @@ footer
         text-align: center;
         color: #0065FC;
     }
-
+    /* Bordures de base pour les filtres de recherche*/
     .filtres-contenu
     {
         border:2px #F2F2F2 solid;
         border-radius: 30px;
     }
-
+    /* Bordures au survol pour les filtres de recherche */
     .filtres-contenu:hover
     {
         border:2px #0065FC solid;
     }
-
+    /* Largeurs des infos */
     .infos-news
     {
         height:30px;
         line-height: 30px;
     }
-
     .eco
     {
         width: 120px;
     }
-
     .familles
     {
         width: 100px;
     }
-
     .romantic
     {
         width: 120px;
     }
-
     .animal
     {
         width: 170px;
@@ -212,7 +252,6 @@ footer
         flex-direction: row;
         justify-content: space-around; 
     }
-
     .hebergement
     {
         display:flex;
@@ -220,7 +259,6 @@ footer
         justify-content: space-between;
         width: 880px;
     }
-
     .logement
     {
         display: flex;
@@ -229,46 +267,51 @@ footer
         flex-wrap: wrap;
         align-content: space-around;
     }
-
     .hebergement, .pop
     {
-        background-color: gray;
         border-radius: 20px;
     }
-
-    article h2
-    {
-        margin-left: 10px;
-    }
-
     .log
     {
         background-color: white;
         border-radius: 10px;
     }
-
     .image
     {
         width: 236px;
         height:114px;
         border-radius: 5px 5px 0 0;
     }
-
     .h2-hebergement
     {
-        font-size: 15px;
-        font-weight: bold;
-        margin-left: 10px;
-    }    
-
-    .txt-hebergement, .etoiles
-    {
-        margin-left:5px;
+        margin-right: 10px;
+        margin-left: 10px; 
     }
-
+    .txt-hebergement, .etoiles, .line-1, .pop-text, .etoiles-2
+    {
+        margin-right: 10px;
+        margin-left:10px;
+    }
     .star-icon
     {
         color: #0065FC;
+    }
+    .affiche
+    {
+        margin-bottom: 10px;
+        margin-left: 40px;
+    }
+    .h1-hebergement
+    {
+        margin-left: 40px;
+    }
+    .h1-hebergement-pop
+    {
+        margin-left: 40px;
+    }
+    .line-1
+    {
+        margin-right: 40px;
     }
 
     /* 2. Section populaires */
@@ -324,13 +367,8 @@ footer
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     
-    }
-
-    .line-1
-    {
-        font-size: 15px;
     }
 
     .etoiles2
