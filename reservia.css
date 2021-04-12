@@ -148,7 +148,7 @@ footer
         border-radius: 5px;
         width: 420px;
     }
-    /* Mise en forme du bouton de recherche */
+    /* Mise en forme des boutons de recherche */
     .bouton
     {
         background-color: #0065FC;
@@ -156,6 +156,10 @@ footer
         font-weight: bold;
         border-radius: 0 10px 10px 0;
         height:30px;
+    }
+    .i-texte
+    {
+        display: none;
     }
     /* Mise en forme de l'icone de recherche
     de lieux de résidence */
@@ -275,6 +279,9 @@ footer
     {
         background-color: white;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     .image
     {
@@ -292,9 +299,15 @@ footer
         margin-right: 10px;
         margin-left:10px;
     }
+    .txt-hebergement
+    {
+        font-size: 0.9em;
+    }
+    
     .star-icon
     {
         color: #0065FC;
+        font-size: 0.9em;
     }
     .affiche
     {
@@ -321,12 +334,16 @@ footer
         height: 104px;
         border-radius: 5px 0 0 5px;
     }
-
     .pop
     {
         width: 420px;
     }
-    
+    .pop-text
+    {
+        font-size: 0.9em;
+        margin-right: 10px;
+        margin-left: 10px; 
+    }
     .titre
     {
         display: flex;
@@ -357,7 +374,7 @@ footer
     {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 104px;
         background-color: white;
         border-radius: 5px;
@@ -367,7 +384,8 @@ footer
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
+        border: 1px orchid solid;
     
     }
 
