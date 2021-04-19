@@ -500,3 +500,418 @@ footer
         justify-content: space-between;
     }
 }
+/* Media querry PORTABLE */
+@media screen and (max-width: 767px)
+{
+	/* GÉNÉRALITÉS */
+    /* Tailles des polices*/
+    h1
+	{
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    h2
+	{
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+    .line-1
+	{
+        font-size: 0.9em;
+        font-weight: bold;
+		margin-right:10px;
+    }
+	p, i
+	{
+		font-size:0.9em;
+	}
+	/* Changement des éléments de navigation
+    hébergements et Activités au survol */
+    .h:hover, .a:hover
+	{
+        border-bottom: 1px #0065FC solid;
+        color: #0065FC;
+    }
+	/* Définition de la largeur
+    et centrage de la boîte container */
+    .container
+	{
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	/* Centrage du header, du footer et du main
+    + définition des mises en formes internes
+    pour ces boîtes */
+	 header
+	 {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width:375px;
+        padding-left: 10px;
+        padding-right: 10px;
+	}
+	nav ul
+	{
+		display:flex;
+		flex-direction:column-reverse;
+		justify-content: space-between;	
+		align-items:flex-start;
+	}
+	 footer
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+		width:375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main
+    {
+        display:flex;
+		flex-direction:column;
+        justify-content: space-between;
+        margin: auto;    
+	}
+    /* Définition des espacements pour
+    les boîtes internes du footer */
+    footer div
+    {
+        margin-top:10px;
+		margin-bottom: 30px;
+		margin-left:10px;
+    }
+    /* définition des espacements entre
+    les éléments de navigations dans le header*/
+    nav li
+    {
+		margin-top:20px;
+        margin-right: 100px;
+		padding-bottom: 20px;
+    }
+    #logo
+    {
+        width:auto;
+        height: auto;
+    }
+	 /* SECTION DE RECHERCHE */
+	/* mise en forme verticale de la dic recherche */
+	.recherche
+	{
+		display:flex;
+		flex-direction: column;
+		justify-content:flex-start;
+		margin-left:10px;
+	}
+	/* Mise en page en ligne de la recherche */
+	.town-search
+	{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    /* Modification du formulaire de recherche */
+    form
+	{
+        border-radius: 5px;
+        width: 420px;
+    }
+    /* Mise en forme des boutons de recherche */
+    .bouton
+	{
+        background-color: #0065FC;
+        color:white;
+        font-weight: bold;
+        border-radius:10px;
+        height:30px;
+    }
+    .b-texte
+    {
+        display: none;
+    }
+    /* Mise en forme de l'icone de recherche
+    de lieux de résidence */
+    .gps
+    {
+        border-radius: 10px 0 0 10px;
+        background-color: #F2F2F2;
+        height:30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    /* Profil de la zone de saisie
+    de la destination recherchée */
+    #destination
+    {
+        height: 26px;
+        border-style: none;
+    }
+    /* Les boîtes de filtres*/
+    .filtres
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .filtres h2
+    {
+        font-size: 1.2em;
+    }
+    .filtres div
+    {
+        margin-left: 20px;
+    }
+    /* Les infos de fin de section de Recherche*/
+    .infos
+    {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+    /* Modifications des icones dans 
+    la section Recherche */
+    .filter-icons, .news
+    {
+        border-radius: 30px;
+        background-color: #DEEBFF;
+        height:30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+    /* Bordures de base pour les filtres de recherche*/
+    .filtres-contenu
+    {
+        border-radius: 40px;
+        border:2px #F2F2F2 solid;
+        
+    }
+    /* Bordures au survol pour les filtres de recherche */
+    .filtres-contenu:hover
+    {
+        border:2px #0065FC solid;
+    }
+    /* Largeurs des infos */
+    .infos-news
+    {
+        height:30px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+    .eco
+    {
+        width: 125px;
+    }
+    .familles
+    {
+        width: 100px;
+    }
+    .romantic
+    {
+        width: 120px;
+    }
+    .animal
+    {
+        width: 170px;
+    }
+    /* Section hébergements */
+    /* 1. Hébergements principal */
+    .section-hebergement
+    {
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-between; 
+    }
+    .hebergement
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+		background-color:white;
+		width:375px;
+    }
+    .logement
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 375px;
+    }
+    .log
+    {
+        background-color: white;
+        border-radius: 10px;
+		border: 1px #F2F2F2 solid;
+		box-shadow: 2px 2px 1px #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 336px;
+        height: 240	px;
+        margin-top:10px;
+		margin-left:auto;
+		margin-right: auto;
+    }
+    .image
+    {
+        width: 326px;
+        height:114px;
+        border-radius: 5px 5px 0 0;
+        margin-top: 5px;
+        margin-left: 5px;
+		margin-right: auto;
+    }
+    .h2-hebergement
+    {
+        margin-right: 10px;
+        margin-left: 10px; 
+        font-size: 0.9em;
+    }
+    .txt-hebergement, .etoiles, .pop-text, .etoiles2
+    {
+        margin-right: 10px;
+        margin-left:10px;
+        
+    }
+    .txt-hebergement, .star-icon, .simple
+    {
+        font-size: 0.8em;
+    }
+    .affiche
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 40px;
+        margin-left: 40px;        
+    }
+    .h1-hebergement
+    {
+        margin-left: 10px;
+        margin-bottom: 20px;
+
+    }
+    .h1-hebergement-pop
+    {
+        margin-left: 10px;
+    }
+    
+    /* 2. Section populaires */
+    .as
+    {
+        width: 125px;
+        height: 134px;
+        border-radius: 5px 0 0 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .pop
+    {
+        width: 375px;
+    }
+    .pop-text
+    {
+        font-size: 0.8em;
+        margin-right: 10px;
+        margin-left: 10px; 
+    }
+    .titre
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+    }
+    .contenu-aside
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 580px;
+		width: 334px;
+    }
+    .contenu-a
+    {
+        width: 334px;
+    }
+    .as
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 144px;
+		width:334px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .as-1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+    .etoiles2
+    {
+        display:flex;
+        flex-direction: row;
+    }
+    /* Section activités */
+    #activites
+    {
+        margin-top: 5px;
+		width: 375px;
+    }
+	.acti-titre
+	{
+		margin-left:10px;
+	}
+    .acti-img
+    {
+        width: 345px;
+		height: 190px;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 10px;
+        box-shadow: 2px 2px 0 #F2F2F2;
+        border-radius: 10px;
+    }    
+    .imag1, .imag2, .imag3, .imag4, .imag5
+    {
+        width: 345px;
+		height: 134px;
+    }
+    .activites-div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top:10px;
+    }
+
+    h2
+    {
+        font-size: 1.2em;
+    }
+
+    h3
+    {
+        font-size: 1.1em;
+    }
+    .double-images
+    {
+		margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
