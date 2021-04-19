@@ -1,28 +1,22 @@
 /* Général */
-
 /* Mettre le contenu du container en colonnes */
 .container
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px lime solid;
+    justify-content: space-around;
 }
-
 /* Définition de la police par défaut */
 .body
 {
     font-family: Raleway, Arial;    
 }
-
 /* Suppression des boutons
 sur les navigations et alignement en ligne */
 nav ul
 {
     list-style-type: none;
-    display:flex;
 }
-
 /* Suppression des décorations  sur les naviagations
 et mise en couleur noires */
 a
@@ -45,33 +39,44 @@ footer
 {
     background-color: #F2F2F2;
 }
-
 .pop, .hebergement
 {
-    background-color: gray;
+    background-color: #F2F2F2;
 }
-
+/* Les étoiles doivente être en bleues */
+.filter-icons, .news, .star-icon
+{
+    color: #0065FC;
+}
 /* Media querry DESKOP */
-@media (min-width: 1200px)
+@media screen and (min-width: 1280px)
 {
     /* GÉNÉRALITÉS */
     /* Tailles des polices*/
+	br
+	{
+		display:none;
+	}
     h1
-    {
-        font-size: 1.2em;
+	{
+        font-size: 1.4em;
         font-weight: bold;
     }
     h2
     {
-        font-size: 1.1em;
+        font-size: 1.2em;
         font-weight: bold;
     }
-    .line-1
+	h3
     {
         font-size: 1.1em;
-        font-weight: bold;
     }
-
+    .line-1
+	{
+        font-size: 1.1em;
+        font-weight: bold;
+		margin-right:40px;
+    }
     /* Changement des éléments de navigation
     hébergements et Activités au survol */
     .h:hover, .a:hover
@@ -99,6 +104,12 @@ footer
         margin-left: 50px;
         margin-right: 50px;
     }
+	nav ul
+	{
+		
+		display:flex;
+		flex-direction:space-between;
+	}
     footer
     {
         display:flex;
@@ -114,43 +125,51 @@ footer
         justify-content: space-between;
         margin-left: 50px;
         margin-right: 50px;
-    }
+        margin-top: 10px;
+        margin-bottom: 10px;    }
     /* Définition des espacements pour
     les boîtes internes du footer */
     footer div
     {
         margin-right: 200px;
         margin-left: 50px;
-    }
+    }	
     /* définition des espacements entre
     les éléments de navigations dans le header*/
     nav li
     {
         margin-right: 20px;
+		padding-top: 20px;
     }
-
     #logo
     {
         width:auto;
         height: auto;
     }
     /* SECTION DE RECHERCHE */
-    /* Mise en page en ligne */
-    .town-search
-    {
+	/* mise en forme verticale de la dic recherche */
+	.recherche
+	{
+		display:flex;
+		flex-direction: column;
+		justify-content:flex-start;
+	}
+	/* Mise en page en ligne de la recherche */
+	.town-search
+	{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
     /* Modification du formulaire de recherche */
     form
-    {
+	{
         border-radius: 5px;
         width: 420px;
     }
     /* Mise en forme des boutons de recherche */
     .bouton
-    {
+	{
         background-color: #0065FC;
         color:white;
         font-weight: bold;
@@ -185,22 +204,25 @@ footer
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        line-height: 100%;
+		flex-wrap:wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
     .filtres h2
     {
-        margin-right: 20px;
+        font-size: 1.2em;
     }
     .filtres div
     {
         margin-left: 20px;
-        margin-top:20px;
     }
     /* Les infos de fin de section de Recherche*/
     .infos
     {
         display: flex;
         flex-direction:row;
+        align-items: center;
     }
     /* Modifications des icones dans 
     la section Recherche */
@@ -210,15 +232,14 @@ footer
         background-color: #DEEBFF;
         height:30px;
         width: 30px;
-        line-height: 30px;
         text-align: center;
-        color: #0065FC;
+        line-height: 30px;
     }
     /* Bordures de base pour les filtres de recherche*/
     .filtres-contenu
     {
+        border-radius: 40px;
         border:2px #F2F2F2 solid;
-        border-radius: 30px;
     }
     /* Bordures au survol pour les filtres de recherche */
     .filtres-contenu:hover
@@ -230,10 +251,11 @@ footer
     {
         height:30px;
         line-height: 30px;
+        margin-left: 10px;
     }
     .eco
     {
-        width: 120px;
+        width: 125px;
     }
     .familles
     {
@@ -247,7 +269,6 @@ footer
     {
         width: 170px;
     }
-
     /* Section hébergements */
     /* 1. Hébergements principal */
     .section-hebergement
@@ -255,13 +276,13 @@ footer
         display:flex;
         flex-direction: row;
         justify-content: space-around; 
+		height: 626px;
     }
     .hebergement
     {
         display:flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 880px;
     }
     .logement
     {
@@ -269,11 +290,13 @@ footer
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        align-content: space-around;
+        align-content: space-between;
+        width: 880px;
     }
     .hebergement, .pop
     {
         border-radius: 20px;
+		height:627px;
     }
     .log
     {
@@ -282,65 +305,89 @@ footer
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        width: 246px;
+        height: 200px;
+        margin: 5px;
     }
     .image
     {
-        width: 236px;
+        width: 235px;
         height:114px;
         border-radius: 5px 5px 0 0;
+        margin-top: 4px;
+        margin-left: 4px;
     }
     .h2-hebergement
     {
+		margin-top: 0px;
         margin-right: 10px;
         margin-left: 10px; 
+		margin-bottom:0px;
+        font-size: 1em;
     }
-    .txt-hebergement, .etoiles, .line-1, .pop-text, .etoiles-2
+    .txt-hebergement, .etoiles, .pop-text, .etoiles2
     {
         margin-right: 10px;
         margin-left:10px;
     }
-    .txt-hebergement
+	.etoiles2
+	{
+		margin-top:20px;
+	}
+	.txt-hebergement
+	{
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	 .pop-text
+	 {
+		 margin-top:0px;
+		 margin-bottom:10px;
+	 }
+    .txt-hebergement, .star-icon, .simple
     {
-        font-size: 0.9em;
+        font-size: 1em;
     }
-    
-    .star-icon
-    {
-        color: #0065FC;
-        font-size: 0.9em;
-    }
+	.autres
+	{
+		margin-bottom:30px;
+	}
     .affiche
     {
-        margin-bottom: 10px;
-        margin-left: 40px;
+        font-size: 1.2em;
+        font-weight: bold;
+		margin-top:40px;
+        margin-bottom: 40px;
+        margin-left: 40px;        
     }
     .h1-hebergement
     {
+		margin-top: 30px;
         margin-left: 40px;
+        margin-bottom: 10px;
     }
     .h1-hebergement-pop
     {
         margin-left: 40px;
     }
-    .line-1
-    {
-        margin-right: 40px;
-    }
-
+    
     /* 2. Section populaires */
     .image2
     {
         width: 127px;
-        height: 104px;
+        height: 134px;
         border-radius: 5px 0 0 5px;
+        margin-top: 5px;
+        margin-left: 5px;
     }
     .pop
     {
         width: 420px;
+		height: 626px;
     }
     .pop-text
     {
-        font-size: 0.9em;
+        font-size: 1em;
         margin-right: 10px;
         margin-left: 10px; 
     }
@@ -351,102 +398,92 @@ footer
         justify-content: space-between;
         margin-left: 10px;
         margin-right: 10px;
-        line-height: 100%;
+		margin-top:10px;
+        align-items: center;
     }
-
     .contenu-aside
     {
         margin-left: 10px;
         margin-right: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        height: 626px;
+        
     }
-
     .contenu-a
     {
         width: 80%;
+		margin:10px;
     }
-
     .as
     {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        height: 104px;
+        height:144px;
         background-color: white;
         border-radius: 5px;
     }
-
     .as-1
     {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        border: 1px orchid solid;
-    
+		flex-grow:1;
     }
-
     .etoiles2
     {
         display:flex;
         flex-direction: row;
     }
-
     /* Section activités */
+    #activites
+    {
+        margin-top: 5px;
+    }
     .acti-img
     {
         width: 302px;
-        border: 5px #F2F2F2 solid;
+        box-shadow: 2px 2px 0 #F2F2F2;
         border-radius: 10px;
     }
-    
     .imag1, .imag2, .imag3, .imag4, .imag5
     {
         width: 302px;
     }
-
     .imag1
     {
         height: 390px;
     }
-
     .imag2
     {
         height: 180px;
     }
-
     .imag3
     {
         height: 110px;
     }
-
     .imag4
     {
         height: 140px;
     }
-
     .imag5
     {
         height: 150px;
     }
-
     .img1
     {
         height: 100%;
     }
-
     .img2
     {
-        height: 52%px;
+        height: 52%;
     }
     .img3
     {
         height: 37%;
     }
-
     .activites-div
     {
         display: flex;
@@ -455,21 +492,11 @@ footer
         flex-wrap: wrap;
         align-items: space-around;
         height: 460px;
-        border: 1px yellow solid
     }
-
-    h2, h3
-    {
-        font-size: 15px;
-        border: 1px black solid;
-    }
-
     .double-images
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-
-
 }
