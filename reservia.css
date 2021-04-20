@@ -106,14 +106,13 @@ footer
     }
 	nav ul
 	{
-		
 		display:flex;
-		flex-direction:space-between;
+		justify-content:flex-end;
 	}
     .nav
     {
         display: flex;
-        flex-direction: space-between;
+        flex-direction: flex-end;
     }
     footer
     {
@@ -268,7 +267,6 @@ footer
     }
     .eco, .familles, .romantic, .animal
     {
-        padding-left: 6px;
         padding-right: 6px;
     }
     /* Section hébergements */
@@ -536,7 +534,7 @@ footer
     hébergements et Activités au survol */
     .h:hover, .a:hover
 	{
-        border-bottom: 1px #0065FC solid;
+        border-bottom: 2px #0065FC solid;
         color: #0065FC;
     }
 	/* Définition de la largeur
@@ -554,17 +552,21 @@ footer
 	 {
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width:375px;
         padding-left: 10px;
         padding-right: 10px;
 	}
+    .nav
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        width:375px;
+    }
 	nav ul
 	{
-		display:flex;
-		flex-direction:column-reverse;
-		justify-content: space-between;	
-		align-items:flex-start;
+		display: flex;
+		justify-content: flex-end;
 	}
 	 footer
     {
@@ -574,6 +576,7 @@ footer
 		width:375px;
         margin-left: auto;
         margin-right: auto;
+        margin-top:10px;
     }
     main
     {
@@ -592,10 +595,9 @@ footer
     }
     /* définition des espacements entre
     les éléments de navigations dans le header*/
-    nav li
+    .h, .a
     {
-		margin-top:20px;
-        margin-right: 100px;
+        margin-right: 20px;
 		padding-bottom: 20px;
     }
     #logo
@@ -662,16 +664,13 @@ footer
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        flex-wrap: wrap;
         align-items: flex-start;
-        
+        margin:0;
     }
     .filtres h2
     {
         font-size: 1.2em;
-    }
-    .filtres div
-    {
-        margin-left: 20px;
     }
     /* Les infos de fin de section de Recherche*/
     .infos
@@ -703,28 +702,20 @@ footer
     {
         border:2px #0065FC solid;
     }
+    .filtres-details
+    {
+        vertical-align: baseline;
+    }
     /* Largeurs des infos */
     .infos-news
     {
-        height:30px;
-        line-height: 30px;
-        margin-left: 10px;
+        width: 375px;
+        vertical-align: baseline;
+        padding-left: 6px;
     }
-    .eco
+    .eco, .familles, .romantic, .animal
     {
-        width: 125px;
-    }
-    .familles
-    {
-        width: 100px;
-    }
-    .romantic
-    {
-        width: 120px;
-    }
-    .animal
-    {
-        width: 170px;
+        padding-right: 6px;
     }
     /* Section hébergements */
     /* 1. Hébergements principal */
@@ -772,11 +763,13 @@ footer
         margin-top: 5px;
         margin-left: 5px;
 		margin-right: auto;
+        object-fit:cover;
     }
     .h2-hebergement
     {
         margin-right: 10px;
-        margin-left: 10px; 
+        margin-left: 10px;
+        margin-top: 2px;
         font-size: 0.9em;
     }
     .txt-hebergement, .etoiles, .pop-text, .etoiles2
@@ -789,12 +782,16 @@ footer
     {
         font-size: 0.8em;
     }
+    .autres
+    {
+        margin-bottom: 40px;
+        margin-top:30px;
+        margin-left: 10px; 
+    }
     .affiche
     {
         font-size: 1.2em;
-        font-weight: bold;
-        margin-bottom: 40px;
-        margin-left: 40px;        
+        font-weight: bold;       
     }
     .h1-hebergement
     {
@@ -808,6 +805,15 @@ footer
     }
     
     /* 2. Section populaires */
+    .image2
+    {
+        width: 127px;
+        height: 130px;
+        border-radius: 5px 0 0 5px;
+        margin-top: 7px;
+        margin-left: 5px;
+        object-fit: cover;
+    }
     .as
     {
         width: 125px;
@@ -825,6 +831,7 @@ footer
         font-size: 0.8em;
         margin-right: 10px;
         margin-left: 10px; 
+        margin-top: 2px;
     }
     .titre
     {
@@ -848,7 +855,8 @@ footer
     }
     .contenu-a
     {
-        width: 334px;
+        width: 336px;
+        box-shadow: 2px 2px 1px #D5D5D5;
     }
     .as
     {
@@ -871,6 +879,7 @@ footer
     {
         display:flex;
         flex-direction: row;
+        margin-top: 20px;
     }
     /* Section activités */
     #activites
@@ -896,6 +905,7 @@ footer
     {
         width: 345px;
 		height: 134px;
+        object-fit: cover;
     }
     .activites-div
     {
