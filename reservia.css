@@ -7,9 +7,9 @@
     justify-content: space-around;
 }
 /* Définition de la police par défaut */
-.body
+body
 {
-    font-family: Raleway, Arial;    
+    font-family: Raleway, sans;    
 }
 /* Suppression des boutons
 sur les navigations et alignement en ligne */
@@ -110,6 +110,11 @@ footer
 		display:flex;
 		flex-direction:space-between;
 	}
+    .nav
+    {
+        display: flex;
+        flex-direction: space-between;
+    }
     footer
     {
         display:flex;
@@ -136,10 +141,14 @@ footer
     }	
     /* définition des espacements entre
     les éléments de navigations dans le header*/
-    nav li
+    .h, .a
     {
         margin-right: 20px;
 		padding-top: 20px;
+    }
+    .lien
+    {
+        padding-top: 20px;
     }
     #logo
     {
@@ -246,28 +255,21 @@ footer
     {
         border:2px #0065FC solid;
     }
+    .filtres-details
+    {
+        vertical-align: baseline;
+    }
     /* Largeurs des infos */
     .infos-news
     {
-        height:30px;
-        line-height: 30px;
-        margin-left: 10px;
+        vertical-align: baseline;
+        padding-right: 6px;
+        padding-left: 6px;
     }
-    .eco
+    .eco, .familles, .romantic, .animal
     {
-        width: 125px;
-    }
-    .familles
-    {
-        width: 100px;
-    }
-    .romantic
-    {
-        width: 120px;
-    }
-    .animal
-    {
-        width: 170px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
     /* Section hébergements */
     /* 1. Hébergements principal */
@@ -308,6 +310,7 @@ footer
         width: 246px;
         height: 200px;
         margin: 5px;
+        box-shadow: 2px 2px 1px #D5D5D5;
     }
     .image
     {
@@ -316,6 +319,7 @@ footer
         border-radius: 5px 5px 0 0;
         margin-top: 4px;
         margin-left: 4px;
+        object-fit: cover;
     }
     .h2-hebergement
     {
@@ -379,6 +383,7 @@ footer
         border-radius: 5px 0 0 5px;
         margin-top: 5px;
         margin-left: 5px;
+        object-fit: cover;
     }
     .pop
     {
@@ -414,7 +419,8 @@ footer
     .contenu-a
     {
         width: 80%;
-		margin:10px;
+		margin-top:30px;
+        box-shadow: 2px 2px 1px #d5d5d5;
     }
     .as
     {
@@ -445,12 +451,8 @@ footer
     .acti-img
     {
         width: 302px;
-        box-shadow: 2px 2px 0 #F2F2F2;
+        box-shadow: 2px 2px 1px #F2F2F2;
         border-radius: 10px;
-    }
-    .imag1, .imag2, .imag3, .imag4, .imag5
-    {
-        width: 302px;
     }
     .imag1
     {
@@ -471,6 +473,11 @@ footer
     .imag5
     {
         height: 150px;
+    }
+    .imag1, .imag2, .imag3, .imag4, .imag5
+    {
+        width: 302px;
+        object-fit: cover;
     }
     .img1
     {
