@@ -13,9 +13,14 @@ body
 }
 /* Suppression des boutons
 sur les navigations et alignement en ligne */
-nav ul
+ul
 {
     list-style-type: none;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	margin:auto;
+	padding:auto;
 }
 /* Suppression des décorations  sur les naviagations
 et mise en couleur noires */
@@ -31,7 +36,6 @@ On met ce lien en gras */
     color:#0065FC;
     font-weight: bold;
 }
-
 /* Fond gris pour le footer
 et les éléments internes de
 la section hébergements*/
@@ -48,6 +52,15 @@ footer
 {
     color: #0065FC;
 }
+/* Disposition en ligne du Header*/
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 /* Media querry DESKOP */
 @media screen and (min-width: 1280px)
 {
@@ -92,28 +105,27 @@ footer
         margin-left: auto;
         margin-right: auto;
     }
-    /* Centrage du header, du footer et du main
+    /* Centrage du footer et du main
     + définition des mises en formes internes
     pour ces boîtes */
-    header
+	  header
     {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
         margin-left: 50px;
         margin-right: 50px;
     }
-	nav ul
+	.nav-i
+	{
+		margin-left:-900px;
+	}
+	nav
+	{
+		margin-top:20px;
+	}
+	ul
 	{
 		display:flex;
 		justify-content:flex-end;
 	}
-    .nav
-    {
-        display: flex;
-        flex-direction: flex-end;
-    }
     footer
     {
         display:flex;
@@ -548,25 +560,44 @@ footer
 	/* Centrage du header, du footer et du main
     + définition des mises en formes internes
     pour ces boîtes */
-	 header
-	 {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width:375px;
-        padding-left: 10px;
-        padding-right: 10px;
-	}
-    .nav
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        width:375px;
-    }
-	nav ul
+	/* Inversion de l'ordre des boites du header*/
+	 .el-foot:nth-child(1)
 	{
+		order:1;
+	}
+	.el-foot:nth-child(2)
+	{
+		order:3;
+	}
+	.el-foot:nth-child(3)
+	{
+		order:2;
+	}
+    .nav-h
+    {
+        flex-grow: 1;
+    }
+	.nav-i
+	{
+		margin-right:10px;
+		margin-top:20px;
+	}
+	.uv-h
+	{
+		flex-grow:1;
 		display: flex;
-		justify-content: flex-end;
+		flex-direction:row;
+		justify-content: space-between;
+		margin:auto;
+		padding:1px;
+	}
+	.li-h
+	{
+		flex-grow:1;
+	}
+	.li-a
+	{
+		flex-grow:1;
 	}
 	 footer
     {
@@ -583,7 +614,8 @@ footer
         display:flex;
 		flex-direction:column;
         justify-content: space-between;
-        margin: auto;    
+        margin: auto; 
+        width: 375px;   
 	}
     /* Définition des espacements pour
     les boîtes internes du footer */
@@ -597,8 +629,13 @@ footer
     les éléments de navigations dans le header*/
     .h, .a
     {
+		flex-grow:1;
+		display: flex;
+		flex-direction:row;
+		justify-content: center;
         margin-right: 20px;
 		padding-bottom: 20px;
+		border-bottom: 2px #F2F2F2 solid;
     }
     #logo
     {
@@ -914,12 +951,10 @@ footer
         justify-content: space-around;
         margin-top:10px;
     }
-
     h2
     {
         font-size: 1.2em;
     }
-
     h3
     {
         font-size: 1.1em;
