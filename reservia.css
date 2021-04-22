@@ -66,7 +66,7 @@ header
 {
     /* GÉNÉRALITÉS */
     /* Tailles des polices*/
-	br
+	.display-br
 	{
 		display:none;
 	}
@@ -108,12 +108,7 @@ header
     /* Centrage du footer et du main
     + définition des mises en formes internes
     pour ces boîtes */
-	  header
-    {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-	.nav-i
+    .nav-i
 	{
 		margin-left:-900px;
 	}
@@ -126,6 +121,11 @@ header
 		display:flex;
 		justify-content:flex-end;
 	}
+    header
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     footer
     {
         display:flex;
@@ -173,17 +173,13 @@ header
 		display:flex;
 		flex-direction: column;
 		justify-content:flex-start;
-	}
-	/* Mise en page en ligne de la recherche */
-	.town-search
+	}	
+    /* Modification du formulaire de recherche */
+    form
 	{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-    }
-    /* Modification du formulaire de recherche */
-    form
-	{
         border-radius: 5px;
         width: 420px;
     }
@@ -216,7 +212,7 @@ header
     #destination
     {
         height: 26px;
-        border-style: none;
+        border: 1px #F2F2F2 solid;
     }
     /* Les boîtes de filtres*/
     .filtres
@@ -226,7 +222,7 @@ header
         justify-content: flex-start;
 		flex-wrap:wrap;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         margin-top: 20px;
     }
     .filtres h2
@@ -651,16 +647,12 @@ header
 		justify-content:flex-start;
 		margin-left:10px;
 	}
-	/* Mise en page en ligne de la recherche */
-	.town-search
+    /* Modification du formulaire de recherche */
+    form
 	{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-    }
-    /* Modification du formulaire de recherche */
-    form
-	{
         border-radius: 5px;
         width: 420px;
     }
@@ -693,21 +685,22 @@ header
     #destination
     {
         height: 26px;
-        border-style: none;
+        border: 1px #F2F2F2 solid;
     }
     /* Les boîtes de filtres*/
     .filtres
     {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-ar;
         flex-wrap: wrap;
-        align-items: flex-start;
-        margin:0;
+        align-items: space-between;
+        
     }
     .filtres h2
     {
         font-size: 1.2em;
+        flex-basis: 100%;
     }
     /* Les infos de fin de section de Recherche*/
     .infos
@@ -732,7 +725,8 @@ header
     {
         border-radius: 40px;
         border:2px #F2F2F2 solid;
-        
+        margin-bottom: 10px;
+        margin-right: 10px;
     }
     /* Bordures au survol pour les filtres de recherche */
     .filtres-contenu:hover
@@ -754,7 +748,11 @@ header
     {
         padding-right: 6px;
     }
-    /* Section hébergements */
+    .romantic
+    {
+        margin-right: 100px;
+    }
+        /* Section hébergements */
     /* 1. Hébergements principal */
     .section-hebergement
     {
@@ -892,7 +890,6 @@ header
     }
     .contenu-a
     {
-        width: 336px;
         box-shadow: 2px 2px 1px #D5D5D5;
     }
     .as
