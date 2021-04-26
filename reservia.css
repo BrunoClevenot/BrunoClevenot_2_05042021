@@ -26,7 +26,7 @@ a
 {
     color: black;
     text-decoration: none;
-    flex-grow: 1;
+    display: block;
 }
 /* Sauf pour le lien S'insrire (en bleu). On met ce lien en gras */
 .lien
