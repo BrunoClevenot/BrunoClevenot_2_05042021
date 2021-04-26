@@ -26,7 +26,7 @@ a
 {
     color: black;
     text-decoration: none;
-    height: 100%;
+    flex-grow: 1;
 }
 /* Sauf pour le lien S'insrire (en bleu). On met ce lien en gras */
 .lien
@@ -267,10 +267,10 @@ form
 }
 .h2-hebergement
 {
-	margin-top: 0px;
+	margin-top: 10px;
     margin-right: 10px;
     margin-left: 10px; 
-	margin-bottom:0px;
+	margin-bottom:5px;
 }
 .txt-hebergement, .etoiles, .pop-text, .etoiles2
 {
@@ -301,6 +301,13 @@ form
     margin-top: 5px;
     margin-left: 5px;
     object-fit: cover;
+}
+.h2-hebergement-pop
+{
+	margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px; 
+	margin-bottom:5px;
 }
 .pop-text
 {
@@ -752,7 +759,7 @@ form
     }
     .h2-hebergement
     {
-        margin-top: 2px;
+        margin-top: 5px;
         margin-bottom: 2px;
         font-size: 0.9em;
     }
@@ -780,6 +787,10 @@ form
     .pop
     {
         width: 375px;
+    }
+    .h2-hebergement-pop
+    {
+	    margin-top: 15px;
     }
     .pop-text
     {
