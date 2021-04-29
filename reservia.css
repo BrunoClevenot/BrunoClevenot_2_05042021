@@ -9,7 +9,8 @@
 /* Définition de la police par défaut */
 body
 {
-    font-family: Raleway, sans;    
+    font-family: Raleway, sans;
+    font-size: 12pt;
 }
 /* Suppression des boutons sur les navigations et alignement en ligne */
 ul
@@ -57,7 +58,7 @@ header
 	flex-wrap: wrap;
 }
 /* Taille d'écriture */
-h1, h2
+h1, h2, h3
 {
     font-weight: bold;
 }
@@ -180,8 +181,7 @@ form
 .infos
 {
     display: flex;
-    flex-direction:row;
-    align-items: center;
+    align-items: baseline;
 }
 /* Modifications des icones dans la section Recherche */
 .filter-icons, .news
@@ -196,6 +196,8 @@ form
  /* Bordures de base pour les filtres de recherche */
  .filtres-contenu
  {
+     display: flex;
+     align-items: baseline;
      border-radius: 40px;
      border:2px #F2F2F2 solid;
  }
@@ -206,7 +208,8 @@ form
  }
  .filtres-details
  {
-     vertical-align: baseline;
+     padding-right: 6px;
+     padding-left: 6px;
  }
  /* Largeurs des infos */
  .infos-news
@@ -214,10 +217,6 @@ form
      vertical-align: baseline;
      padding-right: 6px;
      padding-left: 6px;
- }
- .eco, .familles, .romantic, .animal
- {
-     padding-right: 6px;
  }
  .affiche
 {
@@ -257,13 +256,19 @@ form
     width: 246px;
     height: 200px;
     margin: 5px;
+    padding:5px;
     border: 1px #D5D5D5 solid;
-    box-shadow: 2px 2px 1px #D5D5D5;
+    box-shadow: 2px 2px 5px #D5D5D5;
 }
+.log-a
+    {
+        flex-grow: 1;
+    }
 .image
 {
     border-radius: 5px 5px 0 0;
     object-fit: cover;
+    width:100%;
 }
 .h2-hebergement
 {
@@ -296,10 +301,8 @@ form
 .image2
 {
     width: 127px;
-    height: 134px;
+    height: 100%;
     border-radius: 5px 0 0 5px;
-    margin-top: 5px;
-    margin-left: 5px;
     object-fit: cover;
 }
 .h2-hebergement-pop
@@ -336,7 +339,7 @@ form
 .contenu-a
 {
     border: 1px #D5D5D5 solid;
-    box-shadow: 2px 2px 1px #d5d5d5;
+    box-shadow: 2px 2px 5px #d5d5d5;
 }
 .as
 {
@@ -345,6 +348,7 @@ form
     justify-content: flex-start;
     background-color: white;
     border-radius: 5px;
+    padding: 5px;
 }
 .as-1
 {
@@ -356,12 +360,38 @@ form
 /* Section activités */
 .acti-img
 {
-    box-shadow: 2px 2px 1px #F2F2F2;
+    border:1px #F2F2F2 solid;
+    box-shadow: 2px 2px 5px #F2F2F2;
     border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .imag1, .imag2, .imag3, .imag5
 {
     object-fit: cover;
+    width: 100%;
+}
+.acti-a
+{
+    flex-grow: 1;
+}
+figure
+{
+    display:block;
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+figcaption
+{
+    padding-top: 20px;
+    padding-left: 4px;
+    padding-bottom: auto;
 }
 .img1
 {
@@ -467,17 +497,14 @@ form
     {
 		height: 626px;
     }
-        ement, .pop
+    .hebergement, .pop
     {
         border-radius: 20px;
 		height:626px;
     }
     .image
     {
-        width: 235px;
         height:114px;
-        margin-top: 4px;
-        margin-left: 4px;
     }
     .h2-hebergement
     {
@@ -548,17 +575,9 @@ form
     {
         height: 110px;
     }
-    .imag4
-    {
-        height: 140px;
-    }
     .imag5
     {
         height: 150px;
-    }
-    .imag1, .imag2, .imag3, .imag4, .imag5
-    {
-        width: 302px;
     }
     .activites-div
     {
@@ -585,7 +604,11 @@ form
 		font-size:0.9em;
 	}
 	/* Changement des éléments de navigation hébergements et Activités au survol */
-    .h:hover, .a:hover
+    .h, .a
+    {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }    .h:hover, .a:hover
 	{
         /* Trait en bas */
         border-bottom: 2px #0065FC solid;
@@ -747,15 +770,11 @@ form
 		margin-left:auto;
 		margin-right: auto;
         border: 1px #F2F2F2 solid;
-		box-shadow: 2px 2px 1px #F2F2F2;
+		box-shadow: 2px 2px 5px #F2F2F2;
     }
     .image
     {
-        width: 326px;
         height:114px;
-        margin-top: 5px;
-        margin-left: 5px;
-		margin-right: auto;
     }
     .h2-hebergement
     {
@@ -779,11 +798,7 @@ form
     }
     
     /* 2. Section populaires */
-    .image2
-    {
-        height: 130px;
-        margin-top: 7px;
-    }
+    
     .pop
     {
         width: 375px;
@@ -839,7 +854,6 @@ form
     }    
     .imag1, .imag2, .imag3, .imag5
     {
-        width: 345px;
 		height: 134px;
     }
     .activites-div
@@ -953,10 +967,7 @@ form
     }
     .image
     {
-        width: 175px;
         height:84px;
-        margin-top: 4px;
-        margin-left: 4px;
     }
     .h2-hebergement
     {
@@ -1022,8 +1033,17 @@ form
     .acti-img
     {
         width: 181px;
-        box-shadow: 2px 2px 1px #F2F2F2;
+        box-shadow: 2px 2px 5px #F2F2F2;
+        border: 1px #F2F2F2 solid;
         border-radius: 10px;
+    }
+    figure
+    {
+        font-size: 0.9em;
+    }
+    figcaption
+    {
+        padding-top: 10px;
     }
     .imag1
     {
@@ -1037,19 +1057,9 @@ form
     {
         height: 55px;
     }
-    .imag4
-    {
-        height: 70px;
-    }
     .imag5
     {
         height: 75px;
-    }
-    .imag1, .imag2, .imag3, .imag4, .imag5
-    {
-        margin-left: 15px;
-        margin-top: 0;
-        width: 151px;
     }
     .activites-div
     {
