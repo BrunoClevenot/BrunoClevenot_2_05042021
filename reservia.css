@@ -856,6 +856,11 @@ figcaption
     {
 		height: 134px;
     }
+    figcaption
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     .activites-div
     {
         display: flex;
