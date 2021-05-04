@@ -44,6 +44,11 @@ footer
 {
     background-color: #F2F2F2;
 }
+/* Marge à gauche pour pop */
+.pop
+{
+    margin-left: 5px;
+}
 /* Les étoiles doivente être en bleues */
 .filter-icons, .news, .star-icon
 {
@@ -120,8 +125,15 @@ main
 }
 #logo
 {
-    width:auto;
-    height: auto;
+    flex-grow: 1;
+}
+.nav-h
+{
+    flex-grow: 1;
+}
+.nav-i
+{
+    margin-right: 20px;
 }
 /* SECTION DE RECHERCHE */
 /* Modification du formulaire de recherche */
@@ -389,7 +401,8 @@ figure
 }
 figcaption
 {
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     padding-left: 4px;
     padding-bottom: auto;
 }
@@ -436,15 +449,11 @@ figcaption
     /* Définition de la largeur et centrage de la boîte container */
     .container
     {
-        width: 1440px;
+        max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
     }
     /* Correction centrage du header, du footer et du main + définition des mises en formes internes pour ces boîtes */
-    .nav-i
-	{
-		margin-left:-900px;
-	}
 	nav
 	{
 		margin-top:20px;
@@ -539,7 +548,7 @@ figcaption
     }
     .contenu-a
     {
-	    margin-top:30px;
+	    margin-top:20px;
     }
     .as
     {
@@ -579,13 +588,12 @@ figcaption
     {
         height: 150px;
     }
-    .activites-div
-    {
-        height: 460px;
-    }
     .double-images
     {
-        height: 460px;
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 }
 
@@ -617,7 +625,7 @@ figcaption
 	/* Définition de la largeur et centrage de la boîte container */
     .container
 	{
-        width: 375px;
+        max-width: 375px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -635,10 +643,6 @@ figcaption
 	{
 		order:2;
 	}
-    .nav-h
-    {
-        flex-grow: 1;
-    }
 	.nav-i
 	{
 		margin-right:10px;
@@ -708,14 +712,6 @@ figcaption
     /* Mise en forme de l'icone de recherche  de lieux de résidence : déjà fait */
     /* Profil de la zone de saisie de la destination recherchée : déjà fait */
     /* Les boîtes de filtres*/
-    .filtres
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: space-between;
-    }
     .filtres div
     {
         margin-left: 0;
@@ -798,7 +794,6 @@ figcaption
     }
     
     /* 2. Section populaires */
-    
     .pop
     {
         width: 375px;
@@ -870,9 +865,10 @@ figcaption
     }
     .double-images
     {
-		margin-top: 10px;
+		margin:10px;
     }
 }
+
 /* Media querry Tablette */
 @media screen and (min-width: 768px) and (max-width: 1199px)
 {
@@ -889,15 +885,11 @@ figcaption
     /* Définition de la largeur et centrage de la boîte container */
     .container
     {
-        width: 868px;
+        max-width: 868px;
         margin-left: auto;
         margin-right: auto;
     }
     /* Centrage du footer et du main + définition des mises en formes internes pour ces boîtes */
-    .nav-i
-	{
-		margin-left:-400px;
-	}
 	nav
 	{
 		margin-top:20px;
@@ -1066,12 +1058,8 @@ figcaption
     {
         height: 75px;
     }
-    .activites-div
-    {
-        height: 250px;
-    }
     .double-images
     {
-        height: 250px;
+        
     }
 }
