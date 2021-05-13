@@ -695,9 +695,7 @@ figcaption
     /* Définition des espacements pour les boîtes internes du footer */
     footer div
 	{
-        margin-top:10px;
-		margin-bottom: 30px;
-		margin-left: 0px;
+        margin: 0px;
 		padding:10px;
     }
     /* définition des espacements entre les éléments de navigations dans le header*/
