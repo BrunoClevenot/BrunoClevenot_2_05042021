@@ -196,7 +196,7 @@ form
     align-items: baseline;
 }
 /* Modifications des icones dans la section Recherche */
-.filter-icons, .news
+.filter-icons
 {
     border-radius: 30px;
     background-color: #DEEBFF;
@@ -205,32 +205,41 @@ form
     text-align: center;
     line-height: 30px;
 }
+.news
+{
+	border-radius: 30px;
+    background-color: #ffffff;
+    height:30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
  /* Bordures de base pour les filtres de recherche */
- .filtres-contenu
- {
-     display: flex;
-     align-items: baseline;
-     border-radius: 40px;
-     border:2px #F2F2F2 solid;
- }
- /* Bordures au survol pour les filtres de recherche */
- .filtres-contenu:hover
- {
-     border:2px #0065FC solid;
- }
- .filtres-details
- {
-     padding-right: 6px;
-     padding-left: 6px;
- }
- /* Largeurs des infos */
- .infos-news
- {
-     vertical-align: baseline;
-     padding-right: 6px;
-     padding-left: 6px;
- }
- .affiche
+.filtres-contenu
+{
+    display: flex;
+    align-items: baseline;
+    border-radius: 40px;
+    border:2px #F2F2F2 solid;
+}
+/* Bordures au survol pour les filtres de recherche */
+.filtres-contenu:hover
+{
+    border:2px #0065FC solid;
+}
+.filtres-details
+{
+    padding-right: 6px;
+    padding-left: 6px;
+}
+/* Largeurs des infos */
+.infos-news
+{
+    vertical-align: baseline;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.affiche
 {
     font-size: 1.2em;
     font-weight: bold;
@@ -245,7 +254,7 @@ form
 }
 .hebergement
 {
-     display:flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -259,7 +268,7 @@ form
     width: 880px;
 }
 .log
- {
+{
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -273,9 +282,9 @@ form
     box-shadow: 2px 2px 5px #D5D5D5;
 }
 .log-a
-    {
-        flex-grow: 1;
-    }
+ {
+    flex-grow: 1;
+}
 .image
 {
     border-radius: 5px 5px 0 0;
@@ -370,6 +379,10 @@ form
 	flex-grow:1;
 }
 /* Section activités */
+#activites
+{
+	margin-top: 5px;
+}
 .acti-img
 {
     border:1px #F2F2F2 solid;
@@ -448,7 +461,7 @@ figcaption
 	}
     /* Définition de la largeur et centrage de la boîte container */
     .container
-    {
+	{
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
@@ -464,24 +477,24 @@ figcaption
 		justify-content:flex-end;
 	}
     header
-    {
+	{
         margin-left: 50px;
         margin-right: 50px;
     }
     main
-    {
+	{
         margin-left: 50px;
         margin-right: 50px;
     }
     /* Définition des espacements pour les boîtes internes du footer */
     footer div
-    {
+	{
         margin-right: 200px;
         margin-left: 50px;
     }	
     /* définition des espacements entre les éléments de navigations dans le header*/
     .lien
-    {
+	{
         padding-top: 20px;
     }
     /* SECTION DE RECHERCHE */
@@ -489,7 +502,7 @@ figcaption
     /* Mise en forme des boutons de recherche : déjà fait*/
     /* Cacher l'icône de recherche */
     .i-texte
-    {
+	{
         display: none;
     }
     /* Mise en forme de l'icone de recherche de lieux de résidence :déjà fait */
@@ -503,34 +516,34 @@ figcaption
     /* Section hébergements */
     /* 1. Hébergements principal*/
     .section-hebergement
-    {
+	{
 		height: 626px;
     }
     .hebergement, .pop
-    {
+	{
         border-radius: 20px;
 		height:626px;
     }
     .image
-    {
+	{
         height:114px;
     }
     .h2-hebergement
-    {
+	{
         font-size: 1em;
     }
     .txt-hebergement, .star-icon, .simple
-    {
+	{
         font-size: 1em;
     }
     .affiche
-    {
+	{
 		margin-top:40px;
         margin-bottom: 40px;
         margin-left: 40px;        
     }
     .h1-hebergement
-    {
+	{
 		margin-top: 30px;
         margin-left: 40px;
         margin-bottom: 10px;
@@ -538,58 +551,54 @@ figcaption
     
     /* 2. Section populaires */
     .pop
-    {
+	{
         width: 420px;
 		height: 627px;
     }
     .pop-text
-    {
+	{
         font-size: 1em;
     }
     .contenu-a
-    {
+	{
 	    margin-top:20px;
     }
     .as
-    {
+	{
         height:144px;
         width: 334px;
     }
     .h1-hebergement-pop
-    {
+	{
         margin-left: 40px;
     }
     /* Section activités */
-    #activites
-    {
-        margin-top: 5px;
-    }
     .acti-titre
-    {
-        margin-left: 40px;
+	{
+        margin-left: 0px;
     }
     .acti-img
-    {
+	{
         width: 302px;
     }
     .imag1
-    {
+	{
         height: 390px;
     }
     .imag2
-    {
+	{
         height: 180px;
     }
     .imag3
-    {
+	{
         height: 110px;
     }
     .imag5
-    {
+	{
         height: 150px;
     }
     .double-images
-    {
+	{
         margin-left:10px;
         margin-right: 10px;
         margin-top: 2px;
@@ -613,10 +622,11 @@ figcaption
 	}
 	/* Changement des éléments de navigation hébergements et Activités au survol */
     .h, .a
-    {
+	{
         padding-top: 0;
         padding-bottom: 10px;
-    }    .h:hover, .a:hover
+    }    
+	.h:hover, .a:hover
 	{
         /* Trait en bas */
         border-bottom: 2px #0065FC solid;
@@ -631,7 +641,7 @@ figcaption
     }
 	/* Centrage du header, du footer et du main + définition des mises en formes internes pour ces boîtes */
 	/* Inversion de l'ordre des boites du header*/
-	 .el-foot:nth-child(1)
+	.el-foot:nth-child(1)
 	{
 		order:1;
 	}
@@ -666,30 +676,33 @@ figcaption
 		flex-grow:1;
 	}
 	 footer
-    {
+	{
         display:flex;
         flex-direction: column;
         justify-content: space-around;
-		width:375px;
+		max-width:375px;
+		width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top:10px;
     }
     main
-    {
-        margin: auto; 
-        width: 375px;   
+	{
+        margin-left: 0;
+		margin-right:0;		
+        max-width: 375px;   
 	}
     /* Définition des espacements pour les boîtes internes du footer */
     footer div
-    {
+	{
         margin-top:10px;
 		margin-bottom: 30px;
-		margin-left:10px;
+		margin-left: 0px;
+		padding:10px;
     }
     /* définition des espacements entre les éléments de navigations dans le header*/
     .h, .a
-    {
+	{
 		display: flex;
 		flex-direction:row;
 		justify-content: center;
@@ -697,174 +710,174 @@ figcaption
 		border-bottom: 2px #F2F2F2 solid;
     }
 	/* SECTION DE RECHERCHE */
-	/* Marge de 10px à gauche */
-	.recherche
-	{
-		margin-left:10px;
-	}
+	/* Marge de 10px à gauche : déjà fait */
     /* Modification du formulaire de recherche : déjà fait */
     /* Mise en forme des boutons de recherche : déjà fait */
     /* Cacher le bouton "Recherche" */
     .b-texte
-    {
+	{
         display: none;
     }
     /* Mise en forme de l'icone de recherche  de lieux de résidence : déjà fait */
     /* Profil de la zone de saisie de la destination recherchée : déjà fait */
     /* Les boîtes de filtres*/
     .filtres div
-    {
+	{
         margin-left: 0;
     }
     .filtres h2
-    {
+	{
         flex-basis: 100%;
     }
     /* Les infos de fin de section de Recherche : déjà fait*/
     /* Modifications des icones dans la section Recherche : déjà fait */
     /* Bordures de base pour les filtres de recherche*/
     .filtres-contenu
-    {
+	{
         margin-bottom: 10px;
         margin-right: 10px;
     }
     /* Bordures au survol pour les filtres de  : déjà fait */
     /* Largeurs des infos */
     .infos-news
-    {
+	{
         width: 375px;
     }
     .romantic
-    {
+	{
         margin-right: 100px;
     }
     /* Section hébergements */
     /* 1. Hébergements principal */
     .section-hebergement
-    {
+	{
         display:flex;
         flex-direction: column-reverse;
         justify-content: space-between; 
     }
     .hebergement
-    {
+	{
 		background-color:white;
-		width:375px;
+		max-width:375px;
     }
     .logement
-    {
+	{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 375px;
+		align-items: center;
+        max-width: 100%;
     }
     .log
-    {
-        width: 336px;
+	{
+        width: 90%;
         height: 240	px;
-        margin-top:10px;
-		margin-left:auto;
-		margin-right: auto;
         border: 1px #F2F2F2 solid;
 		box-shadow: 2px 2px 5px #F2F2F2;
     }
     .image
-    {
+	{
         height:114px;
     }
     .h2-hebergement
-    {
+	{
         margin-top: 5px;
         margin-bottom: 2px;
         font-size: 0.9em;
     }
     .txt-hebergement, .star-icon, .simple
-    {
+	{
         font-size: 0.8em;
     }
     .autres
-    {
+	{
         margin-top:30px;
         margin-left: 10px; 
     }
     .h1-hebergement
-    {
+	{
         margin-left: 10px;
         margin-bottom: 20px;
     }
     
     /* 2. Section populaires */
     .pop
-    {
-        width: 375px;
+	{
+        max-width: 375px;
+		margin-left:0;
     }
     .h2-hebergement-pop
-    {
+	{
 	    margin-top: 15px;
+		font-size:0.9em;
     }
     .pop-text
-    {
+	{
         font-size: 0.8em;
     }
     .titre
-    {
+	{
         margin-left: 0px;
         margin-right: 0px;
     }
     .contenu-aside
-    {
+	{
         justify-content: space-around;
-        align-items: center;
+        align-items: center;	
     }
     .contenu-a
-    {
+	{
         margin-top:15px;
         margin-bottom: 15px;
+		width:98%;
+		margin-left:auto;
+		margin-right:auto;
     }
     .as
-    {
-		width:336px;
+	{
+		max-width:336px;
         height: 144px;
+		padding:0px;
     }
     .h1-hebergement-pop
-    {
+	{
         margin-left: 10px;
     }
     /* Section activités */
     #activites
-    {
-        margin-top: 5px;
-		width: 375px;
+	{
+		max-width: 375px;
     }
 	.acti-titre
 	{
 		margin-left:10px;
 	}
     .acti-img
-    {
-        width: 345px;
-		margin-left: 15px;
-		margin-right: 15px;
+	{
+        max-width: 345px;
+		margin-left: 5px;
+		margin-right: 5px;
 		margin-top: 10px;
     }    
     .imag1, .imag2, .imag3, .imag5
-    {
+	{
 		height: 134px;
     }
     figcaption
-    {
+	{
         padding-top: 15px;
         padding-bottom: 15px;
     }
     .activites-div
-    {
+	{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         margin-top:10px;
+		max-width:375px;
     }
     .double-images
-    {
+	{
 		margin:10px;
     }
 }
@@ -879,12 +892,12 @@ figcaption
 		display:none;
 	}
 	h3
-    {
+	{
         font-size: 0.9em;
     }
     /* Définition de la largeur et centrage de la boîte container */
     .container
-    {
+	{
         max-width: 868px;
         margin-left: auto;
         margin-right: auto;
@@ -900,29 +913,31 @@ figcaption
 		justify-content:flex-end;
 	}
     header
-    {
-        margin-left: 20px;
-        margin-right: 20px;
+	{
+        margin-left: 0;
+        margin-right: 0;
     }
     footer
-    {
-        margin-left: 20px;
-        margin-right: 20px;
+	{
+		max-width:868px;
+        margin-left: 0;
+        margin-right: 0;
     }
     main
-    {
-        margin-left: 20px;
-        margin-right: 20px;    
+	{
+		max-width:868px;
+        margin-left: 0;
+        margin-right: 0;    
     }
     /* Définition des espacements pour les boîtes internes du footer */
     footer div
-    {
-        margin-right: 50px;
-        margin-left: 55px;
+	{
+        margin-right: 25px;
+        margin-left: 35px;
     }	
     /* définition des espacements entre les éléments de navigations dans le header*/
     .lien
-    {
+	{
         padding-top: 20px;
     }
     /* SECTION DE RECHERCHE */
@@ -930,7 +945,7 @@ figcaption
     /* Mise en forme des boutons de recherche : déjà fait */
     /* Cacher le bouton avec icône */
     .i-texte
-    {
+	{
         display: none;
     }
     /* Mise en forme de l'icone de recherche de lieux de résidence : déjà fait */
@@ -943,44 +958,46 @@ figcaption
     
     /* Section hébergements */
     /* 1. Hébergements principal */
-    .section-hebergement
-    {
-		height: auto;
-    }
+	.hebergement
+	{
+		width: 48.62%;
+	}
     .logement
-    {
-        width: 422px;
+	{
+        width: 100%;
     }
     .hebergement, .pop
-    {
+	{
         border-radius: 20px;
-		height: 736px;
+		min-height: 736px;
     }
     .log
-    {
-        width: 185px;
+	{
+        width: 44%;
         height: 180px;
-        margin: 5px;
+        margin: 1px;
+		padding: 1px,
     }
     .image
-    {
+	{
         height:84px;
     }
     .h2-hebergement
-    {
+	{
         font-size: 0.9em;
     }
     .txt-hebergement, .star-icon, .simple
-    {
+	{
         font-size: 0.9em;
     }
     .affiche
-    {
-        margin-bottom: 30px;
+	{
+        margin-bottom: auto;
+		margin-top:auto;
         margin-left: 20px;        
     }
     .h1-hebergement
-    {
+	{
 		margin-top: 10px;
         margin-left: 20px;
         margin-bottom: 10px;
@@ -988,78 +1005,79 @@ figcaption
     
     /* 2. Section populaires */
     .pop
-    {
-        width: 381px;
+	{
+        max-width: 42.17%;
     }
     .pop-text
 	{
         font-size: 1em;
 	}
     .titre
-    {
+	{
         margin-left: 5px;
     }
-
-    .contenu-a
-    {
+	.contenu.aside
+	{
+		margin-left: 5px;
+		margin-right: 0px;
+	}
+	.contenu-a
+	{
 		margin-top:50px;
+		margin-left:0;
+		margin-right:0;
     }
     .as
-    {
-        width:334px;
+	{
+        max-width:334px;
         height: 144px;  
     }
     .as-1
-    {
+	{
         margin-top: 5px;
     }
     .h1-hebergement-pop
-    {
+	{
         margin-left: 20px;
     }
     /* Section activités */
     #activites
-    {
-        margin-top: 5px;
-        width: 828px;
+	{
+        max-width: 828px;
     }
     .acti-titre
-    {
+	{
         margin-left: 20px;
     }
     .acti-img
-    {
+	{
         width: 181px;
         box-shadow: 2px 2px 5px #F2F2F2;
         border: 1px #F2F2F2 solid;
         border-radius: 10px;
     }
     figure
-    {
+	{
         font-size: 0.9em;
     }
     figcaption
-    {
+	{
         padding-top: 10px;
     }
     .imag1
-    {
+	{
         height: 195px;
     }
     .imag2
-    {
+	{
         height: 90px;
     }
     .imag3
-    {
+	{
         height: 55px;
     }
     .imag5
-    {
+	{
         height: 75px;
-    }
-    .double-images
-    {
-        
     }
 }
